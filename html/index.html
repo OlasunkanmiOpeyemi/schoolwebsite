@@ -10,6 +10,12 @@
       href="http://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
     />
     <link rel="stylesheet" href="../css/index.css" />
+
+    <!-- ===================== SWIPER JS ======================== -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -332,9 +338,171 @@
 
       <!-- ================== END OF FAQS ==================== -->
 
-      <section class="container testimonial_container"></section>
+      <section class="container testimonials_container mySwiper">
+        <h2>Students' Testimonial</h2>
+        <div class="swiper-wrapper">
+          <article class="testimonial swiper-slide">
+            <div class="avarter"><img src="../images/OIP.jpg" /></div>
+            <div class="testimonial_info">
+              <h5>Diana Ayi</h5>
+              <small>Student</small>
+            </div>
+            <div class="testimonial_body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Facilis molestiae hic assumenda blanditiis voluptate fuga,
+                reiciendis dicta quidem corporis fugit quasi quam modi ut
+                accusantium eos neque aut non at?
+              </p>
+            </div>
+          </article>
+
+          <article class="testimonial swiper-slide">
+            <div class="avarter"><img src="../images/OIP.jpg" /></div>
+            <div class="testimonial_info">
+              <h5>Diana Ayi</h5>
+              <small>Student</small>
+            </div>
+            <div class="testimonial_body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Facilis molestiae hic assumenda blanditiis voluptate fuga,
+                reiciendis dicta quidem corporis fugit quasi quam modi ut
+                accusantium eos neque aut non at?
+              </p>
+            </div>
+          </article>
+
+          <article class="testimonial swiper-slide">
+            <div class="avarter"><img src="../images/OIP.jpg" /></div>
+            <div class="testimonial_info">
+              <h5>Diana Ayi</h5>
+              <small>Student</small>
+            </div>
+            <div class="testimonial_body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Facilis molestiae hic assumenda blanditiis voluptate fuga,
+                reiciendis dicta quidem corporis fugit quasi quam modi ut
+                accusantium eos neque aut non at?
+              </p>
+            </div>
+          </article>
+
+          <article class="testimonial swiper-slide">
+            <div class="avarter"><img src="../images/OIP.jpg" /></div>
+            <div class="testimonial_info">
+              <h5>Diana Ayi</h5>
+              <small>Student</small>
+            </div>
+            <div class="testimonial_body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Facilis molestiae hic assumenda blanditiis voluptate fuga,
+                reiciendis dicta quidem corporis fugit quasi quam modi ut
+                accusantium eos neque aut non at?
+              </p>
+            </div>
+          </article>
+
+          <article class="testimonial swiper-slide">
+            <div class="avarter"><img src="../images/OIP.jpg" /></div>
+            <div class="testimonial_info">
+              <h5>Diana Ayi</h5>
+              <small>Student</small>
+            </div>
+            <div class="testimonial_body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Facilis molestiae hic assumenda blanditiis voluptate fuga,
+                reiciendis dicta quidem corporis fugit quasi quam modi ut
+                accusantium eos neque aut non at?
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
     </main>
 
+    <!-- ====================== END of TESTIMONIALS ============================= -->
+
+    <footer>
+      <div class="container footer-container">
+        <div class="footer_1">
+          <a href="../html/index.html" class="footer_logo"><h4>EGATOR</h4></a>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+          quidem.
+        </div>
+
+        <div class="footer_2">
+          <h4>permalinks</h4>
+          <ul class="permalinks">
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/courses.html">Courses</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_3">
+          <h4>Privacy</h4>
+          <ul class="privacy">
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Terms and condition</a></li>
+            <li><a href="#">Refund policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_4">
+          <h4>Contact Us</h4>
+          <div class="privacy">
+            <p>+234 90 181 997 10</p>
+            <p>olasunkanmiopeyemi1021@gmail.com</p>
+          </div>
+
+          <ul class="footer_socials">
+            <li>
+              <a href="#"><i class="uil uil-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="uil uil-instagram-alt"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="uil uil-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+       <div class="footer_copyright">
+         <p>Copyright@OlasunkanmiOpeyemi</p>
+        </div>
+
+    </footer>
+
+    <!-- ================== END OF FOOTER ======================== -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="../js/index.js"></script>
+    <script>
+      let swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pigmentation",
+          clickable: true,
+        },
+
+        //when window width is 600px
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
